@@ -8,7 +8,7 @@ export default function Chart() {
     const [growthDataYearly, setGrowthDataYearly] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:5003/api/graph-data')
+        axios.get('https://dashboard-backend-k0la.onrender.com/api/graph-data')
             .then(response => {
                 setGrowthDataYearly(response.data.yearly);
                 setGrowthDataMonthly(response.data.month);
