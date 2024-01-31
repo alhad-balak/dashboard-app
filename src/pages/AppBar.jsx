@@ -1,6 +1,6 @@
 import React from 'react'
 import { Menu, MenuItem, Sidebar, useProSidebar } from "react-pro-sidebar";
-import { Button, Img, Line, List, SelectBox, Text } from "components";
+import {Img, Text } from "components";
 export default function AppBar() {
     const { collapseSidebar, collapsed } = useProSidebar();
 
@@ -71,7 +71,7 @@ export default function AppBar() {
     return (
         <Sidebar
             onClick={() => collapseSidebar(!collapsed)}
-            className="!sticky !w-[280px] flex h-screen md:hidden justify-start overflow-auto top-[0]"
+            className="!sticky !w-[180px] flex h-screen md:hidden justify-start overflow-auto top-[0]"
         >
             <Menu
                 menuItemStyles={{
@@ -103,7 +103,7 @@ export default function AppBar() {
                         />
                     </MenuItem>
                 </div>}
-                <div className="sm:h-[393px] md:h-[449px] h-[400px] relative w-full">
+                <div className="sm:h-[393px] md:h-[400px] h-[330px] relative w-full">
                     <div className="relative bottom-[0] flex flex-col gap-2 justify-start">
                         <MenuItem
                             icon={

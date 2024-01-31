@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Button, Img, Line, List, SelectBox, Text } from "components";
+import {Text } from "components";
 export default function TopStates() {
     return (
         <div className="bg-white-A700 flex sm:flex-1 flex-col gap-2 h-64 md:h-auto items-start justify-start p-6 sm:px-5 rounded-[16px] sm:w-full">

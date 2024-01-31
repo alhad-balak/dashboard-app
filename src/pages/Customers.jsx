@@ -1,11 +1,11 @@
 import React from 'react'
 
-import { Button, Img, Line, List, SelectBox, Text } from "components";
+import { Img, Line, List, SelectBox, Text } from "components";
 export default function Customers() {
     const sortByNewestOptionsList = [
-        { label: "Option1", value: "option1" },
-        { label: "Option2", value: "option2" },
-        { label: "Option3", value: "option3" },
+        { label: "Date", value: "Date" },
+        { label: "Active", value: "Active" },
+        { label: "Last Seen", value: "Last Seen" },
     ];
     return (
         <div className="bg-white-A700 flex flex-1 flex-col gap-4 h-[400px] md:h-auto items-start justify-start py-6 rounded-[16px] w-full">

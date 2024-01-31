@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Img, Line, List, SelectBox, Text } from "components";
+import { Img,Text } from "components";
 export default function QuarterGoal() {
     return (
         <div className="bg-white-A700 flex sm:flex-1 flex-col gap-2 h-[261px] items-center justify-start p-6 sm:px-5 rounded-[16px] sm:w-[100%] md:w-[30%]  w-full">

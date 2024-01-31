@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Img, Line, List, SelectBox, Text } from "components";
+import { Button, Img, Text } from "components";
 
 export default function NewDeals() {
     return (
