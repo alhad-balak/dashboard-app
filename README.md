@@ -9,12 +9,12 @@
 ### Objective: 
 Build a complex web app, and design a user-friendly UI based on provided Figma design. 
 
-### Addition Features
+### Additional Features
 1. Design is Responsive for all tablet, mobile and desktop. (as shown in third picture onwards)
 2. Downsampling has been done on the basis of month and year both.
 3. Sidebar can be collapsed on click and vice-versa. (as shown in third picture)
 
-### Screenshots are attached below-
+### Screenshots are attached below.
 #### Picture 1
 ![image](https://github.com/alhad-balak/dashboard-app/assets/84512702/bf778051-f2fd-4076-99a9-144aa93520a6)
 #### Picture 2
