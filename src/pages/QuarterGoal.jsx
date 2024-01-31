@@ -14,7 +14,7 @@ export default function QuarterGoal() {
             <div className="flex flex-col items-center justify-start w-full">
                 <div className="h-[102px] relative w-full">
                     <Img
-                        className="absolute h-[102px] inset-[0] justify-center m-auto"
+                        className="absolute h-[102px] inset-[0] right-[74px] justify-center m-auto"
                         src="images/img_ellipse3.svg"
                         alt="ellipseThree"
                     />
