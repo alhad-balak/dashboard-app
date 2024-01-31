@@ -33,7 +33,7 @@ export default function Graph() {
                             name="frameFive_One"
                             options={yearlyOptionsList}
                             isSearchable={false}
-                            placeholder="Monthly"
+                            placeholder="Yearly"
                         />
                     </div>
                 </div>
@@ -43,7 +43,7 @@ export default function Graph() {
                 className="sm:flex-col flex-row gap-4 grid sm:grid-cols-1 grid-cols-3 h-[90%] justify-start w-full"
                 orientation="horizontal"
             >
-                <div className="bg-white-A700 flex flex-1 flex-col gap-4 h-[90%] items-start justify-start p-4 rounded-[16px] w-full">
+                <div className="bg-white-A700 flex flex-1 flex-col gap-1 h-[95%] items-start justify-start py-2 px-4 rounded-[16px] w-full">
                     <Text
                         className="text-base text-gray-600 tracking-[-0.40px] w-auto"
                         size="txtInterSemiBold16"
@@ -52,7 +52,7 @@ export default function Graph() {
                     </Text>
                     <div className="flex flex-col h-[70%] items-start justify-end w-full">
                         <Text
-                            className="text-2xl md:text-[22px] text-lime-900 sm:text-xl tracking-[-0.20px] w-auto"
+                            className="text-xl md:text-[18px] text-lime-900 sm:text-xl tracking-[-0.20px] w-auto"
                             size="txtInterSemiBold24"
                         >
                             November
@@ -65,16 +65,16 @@ export default function Graph() {
                         </Text>
                     </div>
                 </div>
-                <div className="bg-white-A700 flex flex-1 flex-col gap-4 h-[90%] items-start justify-start p-4 rounded-[16px] w-full">
+                <div className="bg-white-A700 flex flex-1 flex-col gap-1 h-[95%] items-start justify-start py-2 px-4 rounded-[16px] w-full">
                     <Text
                         className="text-base text-gray-600 tracking-[-0.40px] w-auto"
                         size="txtInterSemiBold16"
                     >
                         Top year
                     </Text>
-                    <div className="flex flex-col gap-1 h-[90%] items-start justify-end w-full">
+                    <div className="flex flex-col gap-1 h-[70%] items-start justify-end w-full">
                         <Text
-                            className="text-2xl md:text-[22px] text-lime-900 sm:text-xl tracking-[-0.20px] w-auto"
+                            className="text-xl md:text-[18px] text-lime-900 sm:text-xl tracking-[-0.20px] w-auto"
                             size="txtInterSemiBold24"
                         >
                             2023
@@ -87,7 +87,7 @@ export default function Graph() {
                         </Text>
                     </div>
                 </div>
-                <div className="bg-white-A700 flex flex-1 flex-col gap-4 h-[90%] items-start justify-start p-4 rounded-[16px] w-full">
+                <div className="bg-white-A700 flex flex-1 flex-col gap-1 h-[95%] items-start justify-start px-4 py-1 rounded-[16px] w-full">
                     <Text
                         className="text-base text-gray-600 tracking-[-0.40px] w-auto"
                         size="txtInterSemiBold16"

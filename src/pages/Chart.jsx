@@ -4,12 +4,14 @@ import axios from 'axios';
 
 export default function Chart() {
 
-    const [growthData3, setGrowthData3] = useState([]);
+    const [growthDataMonthly, setGrowthDataMonthly] = useState([]);
+    const [growthDataYearly, setGrowthDataYearly] = useState([]);
 
     useEffect(() => {
         axios.get('http://localhost:5003/api/graph-data')
             .then(response => {
-                setGrowthData3(response.data.yearly);
+                setGrowthDataYearly(response.data.yearly);
+                setGrowthDataMonthly(response.data.month);
             })
             .catch(error => {
                 throw new Error('Error fetching graph data');
@@ -17,15 +19,16 @@ export default function Chart() {
     }, []);
 
     const chartData = {
-        // labels: growthData3.map(data => new Date(data.Timestamp).toDateString().split(" ")[1] + " " + new Date(data.Timestamp).toDateString().split(" ")[3]),
-        labels: ['Jul 2016', ' Dec 2016', 'Apr 2017', 'Jul 2017', 'Jan 2018', 'Jun 2018'],
+        labels: growthDataYearly.map(data => new Date(data.Timestamp).toDateString().split(" ")[1] + " " + new Date(data.Timestamp).toDateString().split(" ")[3]),
+        // labels: ['Jul 2016', ' Dec 2016', 'Apr 2017', 'Jul 2017', 'Jan 2018', 'Jun 2018'],
         datasets: [
             {
+                id: 1,
                 label: 'Profit Percentage',
                 // data: [65, 59, 80, 81, 56, 55, 40],
-                data: growthData3.map(data => data.ProfitPercentage),
-                fill: false,
-                borderColor: 'rgb(75, 192, 192)',
+                data: growthDataYearly.map(data => data.ProfitPercentage),
+                fill: true,
+                borderColor: 'rgb(37, 204, 37)',
                 tension: 0.1,
             },
         ],
@@ -44,6 +47,8 @@ export default function Chart() {
         },
     };
     return (<>
-        <Line data={chartData} options={options} />
+        <div className='h-[90%] items-center w-full'>
+            <Line type='area' data={chartData} options={options} />
+        </div>
     </>);
 }
